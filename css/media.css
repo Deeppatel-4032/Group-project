@@ -72,7 +72,28 @@
     .m-xs {
         margin: 15px ;
     }
-
+    .mt-xs-1{
+        margin: 5px 0 0 0;
+    }
+    .mt-xs-2{
+        margin: 10px 0 0 0;
+    }
+    .mt-xs-3{
+        margin: 15px 0 0 0;
+    }
+    .mt-xs-4{
+        margin: 20px 0 0 0;
+        
+    }
+    .r-xs-g-1{
+        row-gap: 10px;
+    }
+    .r-xs-g-2{
+        row-gap: 20px;
+    }
+    .r-xs-g-3{
+        row-gap: 30px;
+    }
     .p-5-15{
         padding: 5px 15px;
     }

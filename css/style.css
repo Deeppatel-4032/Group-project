@@ -12,36 +12,36 @@
 }
 
 :root {
-  --bs-primary-rgb:249, 241, 231;
-  --sider-width:250px;
-  --header-height:60px;
-  --yellow-opacity:rgb(245, 184,73 , .2);
-  --yellow-text:rgb(245, 184,73);
-  --primarycolor: #1a1c1e ;
-  --input-border:#313335;
-  --admin-color: rgb( 37, 39, 41);
-  --berry:rgba(35, 183, 229 ,.2);
-  --berry-text:rgb(35, 183, 229);
-  --caption-color:#8f9bb3;
-  --purple:rgb(132, 90, 223);
-  --light-blue:rgb(35, 183, 229);
-  --red-text:rgb(230, 83, 60);
-  --berry-red:rgba(230, 83, 60 , .2);
-  --green-text:rgb(38, 191, 148);
-  --green-light:rgba(38, 191, 148 , .2);
-  --header-prime:rgba(255 , 255 , 255 , .6);
+  --bs-primary-rgb: 249, 241, 231;
+  --sider-width: 250px;
+  --header-height: 60px;
+  --yellow-opacity: rgb(245, 184, 73, .2);
+  --yellow-text: rgb(245, 184, 73);
+  --primarycolor: #1a1c1e;
+  --input-border: #313335;
+  --admin-color: rgb(37, 39, 41);
+  --berry: rgba(35, 183, 229, .2);
+  --berry-text: rgb(35, 183, 229);
+  --caption-color: #8f9bb3;
+  --purple: rgb(132, 90, 223);
+  --light-blue: rgb(35, 183, 229);
+  --red-text: rgb(230, 83, 60);
+  --berry-red: rgba(230, 83, 60, .2);
+  --green-text: rgb(38, 191, 148);
+  --green-light: rgba(38, 191, 148, .2);
+  --header-prime: rgba(255, 255, 255, .6);
   --gray: #737373;
-  --btnbg:#f3f3f3;
+  --btnbg: #f3f3f3;
   --black: #000000;
   --gray-black: #131313;
   --fontcolor: #737373;
-  --movie-font:"Covered By Your Grace";
-  --main-font:"Poppins";
+  --movie-font: "Covered By Your Grace";
+  --main-font: "Poppins";
   --white: #ffffff;
   --menu-hover-color: #e9ecef;
   --header-bt-color: #ffffff26;
-  --bs-warning-text-emphasis:rgb(237, 171, 21);
-  --text-grey:#9f9f9f;
+  --bs-warning-text-emphasis: rgb(237, 171, 21);
+  --text-grey: #9f9f9f;
 }
 
 body {
@@ -101,7 +101,8 @@ body {
   flex-wrap: wrap;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -223,8 +224,72 @@ th {
 
 .btn-primary {
   --bs-btn-bg: #B88E2F;
+  --bs-btn-color: #fff;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-border-color: #B88E2F;
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-border-color: #B88E2F;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-border-color: #B88E2F;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #B88E2F;
+  --bs-btn-disabled-border-color: #B88E2F;
+  --bs-btn-active-bg: transparent;
+  
+}
+.btns{
+  background-color: #B88E2F;
+  border: none;
+  color: var(--white);
+}
+.offcanvas{
+  --bs-offcanvas-width: 350px;
+}
+.btns:hover{
+  background-color: #B88E2F;
 }
 
+/* loader */
+
+.loading-area {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  position: fixed;
+display: flex;
+align-items: center;
+justify-content: center;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.loader div {
+height: 30px;
+width: 30px;
+border-radius: 50%;
+transform: scale(0);
+animation: animate 1.5s ease-in-out infinite;
+display: inline-block;
+margin: .5rem;
+animation-delay: calc(var(--i) * 0.2s);
+}
+
+@keyframes animate {
+0%, 100% {
+  transform: scale(0.2);
+  background-color: #B88E2F;
+}
+40% {
+  transform: scale(1);
+  background-color: #B88E2F;
+}
+50% {
+  transform: scale(1);
+  background-color: #B88E2F;
+}
+}
 hr {
   margin: 4px 0;
   opacity: 100%;
@@ -239,6 +304,18 @@ hr {
   --primary-color: #B88E2F;
   --secondery-color: #F9F1E7;
   --description-color: #9F9F9F;
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 25px;
+  background-color: #B88E2F;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 body {
@@ -307,6 +384,111 @@ body {
 .blog-conts ul li {
   color: var(--description-color);
   line-height: 3;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.pb-100 {
+  padding-bottom: 100px;
+}
+
+.padding-px-15 {
+  padding: 0 15px 0 15px;
+}
+
+.header-content ul li a {
+  color: black;
+}
+
+.header-content ul li a:hover {
+  color: #B88E2F;
+}
+
+.footer-list ul li a {
+  color: black;
+}
+
+.footer-list ul li a:hover {
+  color: #B88E2F;
+}
+
+.header-icon ul li a {
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.header-icon ul li a:hover {
+  background-color: #B88E2F;
+  color: #fff;
+}
+
+.header-icon ul li:hover {
+  background-color: #B88E2F;
+}
+.manu-bar ul li a{
+  color: black;
+  transition: all 0.3s ease;
+}
+.manu-bar ul li a:hover {
+  background-color: #B88E2F;
+  color: #fff;
+}
+.dropdown-menu {
+  --bs-dropdown-link-active-bg: transparent;
+}
+
+.btn-outline-warning {
+  --bs-btn-color: #b88e2f;
+  --bs-btn-border-color: #b88e2f;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #b88e2f;
+  --bs-btn-hover-border-color: #b88e2f;
+  --bs-btn-focus-shadow-rgb: 255, 193, 7;
+  --bs-btn-active-color: #fff;
+}
+
+/* card-section */
+.products .card-img {
+  position: relative;
+}
+
+.products .card-img img {
+  min-width: 100%;
+  height: auto;
+}
+
+.products .card-img .img-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(58, 58, 58, 1);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.products .card-img .img-hover:hover {
+  opacity: 1;
+}
+
+.products .card-img .img-hover i {
+  font-size: 20px;
+  padding: 5px;
+}
+
+.scal-img {
+  overflow: hidden;
+  transform: scale(1);
+  border-radius: 15px;
+  transition: all 0.3s;
+}
+
+.scal-img img:hover {
+  transform: scale(1.2);
 }
 
 .banner-bg {

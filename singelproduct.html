@@ -26,104 +26,6 @@
 
     <!-- fonts css -->
     <link rel="stylesheet" href="./css/fonts.css" />
-
-    <style>
-        body {
-            font-family: 'poppins';
-        }
-
-        .pt-100 {
-            padding-top: 100px;
-        }
-
-        .pb-100 {
-            padding-bottom: 100px;
-        }
-
-        .padding-px-15 {
-            padding: 0 15px 0 15px;
-        }
-
-        .header-content ul li a {
-            color: black;
-        }
-
-        .header-content ul li a:hover {
-            color: #B88E2F;
-        }
-
-        .footer-list ul li a {
-            color: black;
-        }
-
-        .footer-list ul li a:hover {
-            color: #B88E2F;
-        }
-
-        .header-icon ul li a {
-            color: black;
-            transition: all 0.3s ease;
-        }
-
-        .header-icon ul li a:hover {
-            background-color: #B88E2F;
-            color: #fff;
-        }
-
-        .header-icon ul li:hover {
-            background-color: #B88E2F;
-        }
-
-        .dropdown-menu {
-            --bs-dropdown-link-active-bg: transparent;
-        }
-
-        .btn-outline-warning {
-            --bs-btn-color: #b88e2f;
-            --bs-btn-border-color: #b88e2f;
-            --bs-btn-hover-color: #fff;
-            --bs-btn-hover-bg: #b88e2f;
-            --bs-btn-hover-border-color: #b88e2f;
-            --bs-btn-focus-shadow-rgb: 255, 193, 7;
-            --bs-btn-active-color: #fff;
-        }
-
-        /* card-section */
-        .products .card-img {
-            position: relative;
-        }
-
-        .products .card-img img {
-            min-width: 100%;
-            height: auto;
-        }
-
-        .products .card-img .img-hover {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            background-color: rgba(58, 58, 58, .8);
-            color: #fff;
-            opacity: 0;
-            transition: opacity 0.5s;
-        }
-
-        .products .card-img .img-hover:hover {
-            opacity: 1;
-        }
-
-        .products .card-img .img-hover i {
-            font-size: 20px;
-            padding: 5px;
-        }
-
-        .no-pic:hover {
-            background-color: #B88E2F;
-            color: white;
-        }
-    </style>
 </head>
 
 <body>
@@ -151,7 +53,7 @@
                                         <li><a class="dropdown-item" href="./singelproduct.html">Asgaard sofa</a></li>
                                         <li><a class="dropdown-item" href="./comparison.html">Product comparison</a>
                                         </li>
-                                        <li><a class="dropdown-item" href="./cart.html">card</a></li>
+                                        <li><a class="dropdown-item" href="./cart.html">cart</a></li>
                                         <li><a class="dropdown-item" href="./checkout.html">checkout</a></li>
                                     </ul>
                                 </li>
@@ -163,33 +65,77 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="header-icon col-3 col-md-4 d-xs-none d-sm-none d-md-block">
-                            <ul class="m-0 d-f justify-content-lg-evenly">
+                        <div class="header-icon col-3 col-md-4  d-xs-none d-sm-none d-md-block">
+                            <ul class="m-0  d-f justify-content-md-between justify-content-lg-evenly">
                                 <li style="width: 37px; height: 37px; "
-                                    class="rounded-circle border border-2 d-f a-i-c j-c-c">
+                                    class="rounded-circle border border-2 d-f a-i-c j-c-c ">
                                     <a href="#">
                                         <i class="fa-solid fa-user"></i>
                                     </a>
                                 </li>
                                 <li style="width: 37px; height: 37px; "
-                                    class="rounded-circle border border-2 d-f a-i-c j-c-c">
+                                    class="rounded-circle border border-2 d-f a-i-c j-c-c ">
                                     <a href="#">
                                         <i class="fa-solid fa-magnifying-glass"></i>
                                     </a>
                                 </li>
                                 <li style="width: 37px; height: 37px; "
-                                    class="rounded-circle border border-2 d-f a-i-c j-c-c">
+                                    class="rounded-circle border border-2 d-f a-i-c j-c-c ">
                                     <a href="#">
                                         <i class="fa-regular fa-heart"></i>
                                     </a>
                                 </li>
                                 <li style="width: 37px; height: 37px; "
-                                    class="rounded-circle border border-2 d-f a-i-c j-c-c">
+                                    class="rounded-circle border border-2 d-f a-i-c j-c-c ">
                                     <a href="#">
                                         <i class="fa-solid fa-cart-shopping fs-6"></i>
                                     </a>
                                 </li>
                             </ul>
+                        </div>
+                        <button class="btn btn-primary d-lg-none" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <i class="fa-solid fa-bars text-dark"></i></button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                            aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <div class="logo m-xs-auto m-sm-auto m-md-0">
+                                    <img src="images/logo.svg" alt="logo">
+                                </div>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="manu-bar">
+                                    <ul class="navbar-nav flex-grow-1 pe-3">
+                                        <li class="nav-item">
+                                            <a class="nav-link active py-3 px-5" aria-current="page"
+                                                href="./Home.html">Home</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle py-3 px-5 fw-normal" href="./shop.html"
+                                                role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                                                Shop
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="./shop.html">Shop</a></li>
+                                                <li><a class="dropdown-item" href="./singelproduct.html">Asgaard
+                                                        sofa</a></li>
+                                                <li><a class="dropdown-item" href="./comparison.html">Product
+                                                        comparison</a>
+                                                </li>
+                                                <li><a class="dropdown-item" href="./cart.html">cart</a></li>
+                                                <li><a class="dropdown-item" href="./checkout.html">checkout</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link py-3 px-5" href="./blog.html">Blog</a>
+                                        <li class="nav-item">
+                                            <a class="nav-link py-3 px-5" href="./contact.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
